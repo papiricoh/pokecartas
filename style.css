@@ -1,1 +1,46 @@
-/* Aquí va el CSS */
+.card {
+    background-color: grey;
+    display: inline-block;
+    border: 10px solid darkgoldenrod;
+    border-radius: 0.5rem;
+    padding: 12px;
+}
+
+.title {
+    margin: 12px;
+    display: grid;
+}
+
+.pkm_name {
+    text-align: left;
+    font-weight: bold;
+    font-size: 20px;
+    grid-column: 1;
+}
+
+.data {
+    margin-left: 60%;
+    display: inline;
+    grid-column: 2;
+}
+
+img {
+    margin: auto;
+    padding: 100px;
+    background-image: url(./img/pokemon-background.png);
+    border: 2px solid goldenrod;
+    border-radius: 2px;
+}
+
+/* TYPES */
+.water {
+    background-color: steelblue;
+}
+
+.fire {
+    background-color: orangered;
+}
+
+.grass {
+    background-color: green;
+}
