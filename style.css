@@ -4,43 +4,49 @@
     border: 10px solid darkgoldenrod;
     border-radius: 0.5rem;
     padding: 12px;
+    padding-bottom: 60px;
+    margin: 12px;
 }
 
 .title {
-    margin: 12px;
-    display: grid;
+    margin-bottom: 16px;
+    margin-top: 8px;
 }
 
 .pkm_name {
     text-align: left;
     font-weight: bold;
     font-size: 20px;
-    grid-column: 1;
 }
 
 .data {
-    margin-left: 60%;
-    display: inline;
-    grid-column: 2;
+    float: right;
+    margin-top: -2px;
 }
 
 img {
     margin: auto;
-    padding: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
     background-image: url(./img/pokemon-background.png);
+    background-position: -100px -50px;
     border: 2px solid goldenrod;
     border-radius: 2px;
 }
 
 /* TYPES */
 .water {
-    background-color: steelblue;
+    background: linear-gradient(rgb(13, 111, 156), rgb(23, 16, 156));
 }
 
 .fire {
-    background-color: orangered;
+    background: linear-gradient(rgb(225, 18, 18), rgb(135, 6, 6));
 }
 
 .grass {
-    background-color: green;
+    background: linear-gradient(rgb(13, 156, 18), rgb(1, 58, 3));
+}
+
+.electric {
+    background: linear-gradient(rgb(195, 186, 14), rgb(105, 105, 2));
 }
