@@ -11,7 +11,8 @@ export default {
             name: "Loading",
             type: "O",
             image_path: "https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif",
-            abilities: ["Loading"]
+            abilities: ["Loading"],
+            isShiny: ""
         }
     },
     props: {
@@ -44,8 +45,10 @@ export default {
                         .then(data2 => {
                             if(Math.floor(Math.random() * 100).toFixed(0) > 5) {
                                 this.image_path = data2.sprites.front_default;
+                                this.isShiny = "";
                             }else {
                                 this.image_path = data2.sprites.front_shiny;
+                                this.isShiny = "✨";
                             }
                         }).catch(error => console.error(error))
                 }).catch(error => console.error(error))
@@ -111,7 +114,7 @@ export default {
 <template>
   <div class="card">
         <div class="title">
-            <span class="pkm_name">{{name}}</span>
+            <span class="pkm_name">{{name}} {{ isShiny }}</span>
             <div class="data">
                 <span class="HP">60hp</span>
                 <span class="type">{{ type }}</span>
