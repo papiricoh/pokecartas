@@ -36,7 +36,8 @@ export default {
                         new_abilities[index] = data.abilities[index].ability.name;
                     }
                     this.abilities = new_abilities;
-                    this.name = data.forms[0].name;
+                    let prov_name = data.forms[0].name;
+                    this.name = prov_name.charAt(0).toUpperCase() + prov_name.slice(1);
                     this.type = this.getTypes(data.types);
                     fetch(data.forms[0].url)
                         .then(response2 => response2.json())
