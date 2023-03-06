@@ -28,7 +28,7 @@ img {
     margin: auto;
     padding-left: 30px;
     padding-right: 30px;
-    background-image: url(./img/pokemon-background.png);
+    background-image: url(/img/pokemon-background.png);
     background-position: -100px -50px;
     border: 2px solid goldenrod;
     border-radius: 2px;
