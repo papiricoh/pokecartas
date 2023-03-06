@@ -1,5 +1,11 @@
+<script setup>
+    import { useRouter } from "vue-router"
+</script>
+
 <script>
+
 export default {
+    name: "Card",
     data() {
         return {
             name: "Bulbasaur",
@@ -7,6 +13,10 @@ export default {
             image_path: "/img/bulbasaur.png",
             abilities: ["Overgrow", "Chlorophyll"]
         }
+    },
+    setup(){
+        const router = useRouter()
+        router.push("/")
     },
     props: {
         
@@ -75,10 +85,11 @@ export default {
         }
     },
     mounted() {
-        this.getData(100);
+        this.getData(220);
   }
 }
 </script>
+
 
 <template>
   <div class="card">
