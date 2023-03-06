@@ -8,10 +8,10 @@ export default {
     name: "Card",
     data() {
         return {
-            name: "Bulbasaur",
-            type: "🌿",
-            image_path: "/img/bulbasaur.png",
-            abilities: ["Overgrow", "Chlorophyll"]
+            name: "Loading",
+            type: "O",
+            image_path: "https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif",
+            abilities: ["Loading"]
         }
     },
     props: {
