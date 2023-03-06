@@ -1,5 +1,31 @@
 # Cartas Pokémon
 
+Transformacion de la tarea de cartas pokemon en un generador dinamico de estas.
+
+Puedes acceder a la web ya desplegada con node.js desde este [link](https://papiricoh.github.io/pokecartas/#/)
+
+## Caracteristicas de la aplicacion web:
+- En el directorio principal de la web se generara aleatoriamente un Pokemon de los 1008 actuales
+- Se mostraran sus habilidades
+- Se mostraran sus tipos en forma de emoticonos
+- Se mostrara su nombre
+- Si añadimos un numero del 1 al 1008 en la url tal que [asi](https://papiricoh.github.io/pokecartas/#/643): `https://papiricoh.github.io/pokecartas/#/643` accederemos al pokemon con el numero de la pokedex correspondiente en este caso el `643`
+
+## Tecnologias usadas:
+- CSS3
+- HTML
+- JavaScript
+- Vue3.js
+- Vite.js
+- Vue-Router.js
+
+
+
+
+
+
+
+### ORIGINAL README.MD:
 Crear 4 cartas pokemon con html y css, siguiendo las siguientes directrices:
 
 - Clonar el [siguiente repositorio](https://github.com/rodri-afa/pokecartas)
@@ -19,4 +45,4 @@ Crear 4 cartas pokemon con html y css, siguiendo las siguientes directrices:
 
 ### Ejemplo
 
-<img src="./img/ejemplo-charizard.png" width="200" >
+<img src="./public/img/ejemplo-charizard.png" width="200" >
