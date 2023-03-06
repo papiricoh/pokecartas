@@ -42,7 +42,11 @@ export default {
                     fetch(data.forms[0].url)
                         .then(response2 => response2.json())
                         .then(data2 => {
-                            this.image_path = data2.sprites.front_default;
+                            if(Math.floor(Math.random() * 100).toFixed(0) > 5) {
+                                this.image_path = data2.sprites.front_default;
+                            }else {
+                                this.image_path = data2.sprites.front_shiny;
+                            }
                         }).catch(error => console.error(error))
                 }).catch(error => console.error(error))
         },
