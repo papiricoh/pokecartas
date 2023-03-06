@@ -14,12 +14,17 @@ export default {
             abilities: ["Overgrow", "Chlorophyll"]
         }
     },
-    setup(){
-        const router = useRouter()
-        router.push("/")
-    },
     props: {
-        
+        id: Number
+    },
+    watch: { 
+        id: function(newVal, oldVal) {
+            if (newVal == null || newVal == -1) {
+                this.getData(this.randomPkm());
+            }else {
+                this.getData(newVal);
+            }
+        }
     },
     methods: {
         getData(id) {
@@ -82,11 +87,18 @@ export default {
                 }
             }
             return type_string;
+        },
+        randomPkm() {
+            return Math.floor(Math.random() * 1008);
         }
     },
     mounted() {
-        this.getData(220);
-  }
+        if (this.id == null || this.id == -1) {
+            this.getData(this.randomPkm());
+        }else {
+            this.getData(this.id);
+        }
+    }
 }
 </script>
 

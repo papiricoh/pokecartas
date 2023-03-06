@@ -4,6 +4,6 @@ import Card from './components/Card.vue'
 
 <template>
   <main>
-    <Card />
+    <router-view />
   </main>
 </template>
