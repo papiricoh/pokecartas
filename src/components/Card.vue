@@ -12,7 +12,8 @@ export default {
             type: "O",
             image_path: "https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif",
             abilities: ["Loading"],
-            isShiny: ""
+            isShiny: "",
+            type_color: "normal",
         }
     },
     props: {
@@ -40,6 +41,7 @@ export default {
                     let prov_name = data.forms[0].name;
                     this.name = prov_name.charAt(0).toUpperCase() + prov_name.slice(1);
                     this.type = this.getTypes(data.types);
+                    this.type_color = data.types[0].type.name;
                     fetch(data.forms[0].url)
                         .then(response2 => response2.json())
                         .then(data2 => {
@@ -112,7 +114,7 @@ export default {
 
 
 <template>
-  <div class="card">
+  <div class="card" :class="type_color">
         <div class="title">
             <span class="pkm_name">{{name}} {{ isShiny }}</span>
             <div class="data">

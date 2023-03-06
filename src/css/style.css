@@ -38,7 +38,7 @@ img {
 
 /* TYPES */
 .water {
-    background: linear-gradient(rgb(13, 111, 156), rgb(23, 16, 156));
+    background: linear-gradient(rgb(13, 111, 156), rgb(51, 42, 235));
 }
 
 .fire {
@@ -51,4 +51,62 @@ img {
 
 .electric {
     background: linear-gradient(rgb(195, 186, 14), rgb(105, 105, 2));
+}
+
+.normal {
+    background: linear-gradient(grey, gray);
+}
+
+.fighting {
+    background: linear-gradient(rgb(197, 85, 20), rgb(105, 43, 2));
+}
+
+.poison {
+    background: linear-gradient(rgb(117, 20, 197), rgb(47, 2, 105));
+}
+
+.psychic {
+    background: linear-gradient(rgb(197, 20, 174), rgb(105, 2, 96));
+}
+
+.ghost {
+    background: linear-gradient(rgb(241, 240, 241), rgb(105, 2, 96));
+}
+
+.fairy {
+    background: linear-gradient(rgb(196, 94, 182), rgb(167, 43, 156));
+}
+
+.ground {
+    background: linear-gradient(rgb(124, 59, 21), rgb(61, 28, 6));
+}
+
+.rock {
+    background: linear-gradient(rgb(148, 122, 49), rgb(131, 65, 21));
+}
+
+.bug {
+    background: linear-gradient(rgb(114, 151, 45), rgb(66, 119, 16));
+}
+
+.dark {
+    background: linear-gradient(rgb(53, 53, 53), rgb(0, 0, 0));
+    color: white;
+}
+
+.steel {
+    background: linear-gradient(rgb(199, 199, 199), rgb(226, 217, 217));
+}
+
+.flying {
+    background: linear-gradient(rgb(76, 173, 218), rgb(76, 127, 185));
+}
+
+.dragon {
+    background: linear-gradient(rgb(111, 73, 143), rgb(49, 3, 38));
+    color:white;
+}
+
+.ice {
+    background: linear-gradient(rgb(180, 180, 180),rgb(15, 182, 168));
 }
