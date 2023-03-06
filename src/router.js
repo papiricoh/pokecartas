@@ -1,6 +1,7 @@
 import { createRouter, createWebHashHistory } from "vue-router";
 import Card from "./components/Card.vue";
-import Default from './components/Default.vue'
+import Default from './components/Default.vue';
+import Multiple from './components/Multiple.vue';
 
 const routes = [
 
@@ -14,6 +15,12 @@ const routes = [
         name: 'Default', 
         path: "/", 
         component: Default, 
+    },
+    {
+        name: 'Multiple', 
+        path: "/multiple/:num", 
+        component: Multiple,
+        props: true
     },
 
 ];
