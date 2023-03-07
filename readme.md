@@ -11,6 +11,7 @@ Puedes acceder a la web ya desplegada con node.js desde este [link](https://papi
 - Se mostrara su nombre
 - Si añadimos un numero del 1 al 1008 en la url tal que [asi](https://papiricoh.github.io/pokecartas/#/643): `https://papiricoh.github.io/pokecartas/#/643` accederemos al pokemon con el numero de la pokedex correspondiente en este caso el `643`
 - Si añadimos `/multiple/:num` siendo num un 1 o mayor generaremos la cantidad que queramos de cartas a la vez [Ejemplo](https://papiricoh.github.io/pokecartas/#/multiple/4)
+- Existe la posibilidad de 5 en cada 100 veces que la carta salga *Shiny*
 
 ## Tecnologias usadas:
 - CSS3
