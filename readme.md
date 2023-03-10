@@ -13,6 +13,11 @@ Puedes acceder a la web ya desplegada con node.js desde este [link](https://papi
 - Si añadimos `/multiple/:num` siendo num un 1 o mayor generaremos la cantidad que queramos de cartas a la vez [Ejemplo](https://papiricoh.github.io/pokecartas/#/multiple/4)
 - Existe la posibilidad de 5 en cada 100 veces que la carta salga *Shiny*
 
+## Instalacion:
+- Clona el repositorio en tu entorno de desarrollo
+- Realiza un `npm install` en la consola estando en el directorio principal de la aplicacion
+- Introduce un `npm run dev` para desplegar su previsualizacion ( Recordamos que es indispensable la conexion internet pues se esta usando una API externa )
+
 ## Tecnologias usadas:
 - CSS3
 - HTML
